@@ -1,0 +1,93 @@
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: linear-gradient(45deg, #3498db, #e74c3c, #b941dd, #f1c40f);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 15s ease infinite;
+}
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.rps {
+    width: 30vw;
+    height: 50vh;
+    background: rgba(255,255,255,0.5);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.game {
+    font-size: 25px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #222222;
+    margin: 10px 0;
+    margin-left: 5px;
+}
+
+#result {
+    font-weight: bold;
+}
+
+.choicebtns {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playerinp:hover {
+    background-color: #2980b9;
+}
+
+.rps button {
+    display: inline-block;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+#rockbtn {
+    background-color: #e74c3c;
+}
+
+#paperbtn {
+    background-color: #2ecc71;
+}
+
+#stonebtn {
+    background-color: #f1c40f;
+}
+
